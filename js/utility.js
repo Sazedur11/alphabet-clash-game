@@ -14,17 +14,33 @@ function addBGColorById(elementId){
     const element = document.getElementById(elementId);
     element.classList.add('bg-orange-400');
 }
+function removeBGColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-400');
+}
 
 
 //generate the random alphabet
+// function getARandomAlphabet(){
+//     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
+//     const alphabets = alphabetString.split('');
+
+//     const randomNum = Math.random()*25;
+//     const index = Math.round(randomNum);
+//     console.log(index);
+
+//     const alphabet = alphabets[index]
+//     return alphabet;
+// }
+
 function getARandomAlphabet(){
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
     const alphabets = alphabetString.split('');
 
-    const randomNum = Math.random()*25;
+    const randomNum = Math.random()* 25;
     const index = Math.round(randomNum);
-    console.log(index);
 
-    const alphabet = alphabets[index]
-    return alphabet;
+    const alphabet = alphabets[index];
+    
+    return alphabet
 }
